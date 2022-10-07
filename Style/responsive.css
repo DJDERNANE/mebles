@@ -1,0 +1,75 @@
+@media screen and (max-width:800px) {
+    .Header{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: flex-start;
+        height: max-content;
+        justify-content: center;
+        padding: 20px 10px;
+    }
+    .navbar{
+        display: none;
+    }
+    .navbtn{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .navbtn div{
+        transition: all 0.8s;
+    }
+    .logo{
+        padding: 3px;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+    .post .txt {
+        margin: auto;
+        margin-top: 30px;
+    }
+    .pic img{
+        height: 280px;
+    }
+    .offers{
+        display: flex;
+        flex-direction: column;
+    }
+    .child{
+        width: 90%;
+        margin-top: 20px;
+    }
+    .navbtn.active div:nth-child(2){
+        opacity: 0;
+    }
+    .navbtn.active div:nth-child(1){
+        transform: rotate(45deg) translateY(11px);
+    }
+    .navbtn.active div:nth-child(3){
+        transform: rotate(-45deg) translateY(-11px);
+    }
+    .navbar.active{
+        display: block;
+        width: 100%;
+    }
+    .navbar.active ul{
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar.active ul li{
+        margin: 30px auto;
+    }
+    .navbar.active ul li a {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .navbar.active ul li a:hover{
+        font-weight: bold;
+    }
+}
